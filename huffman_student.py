@@ -46,8 +46,8 @@ class HuffmanCoding:
 
         if node.is_leaf():
           self.d[node.symbol]=string
-
-
+          return
+    
         if node.left:
           self.get_codes(node.left, string+'0')
         if node.right:
